@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.8'
 services:
   vprodb:
     build:
@@ -34,8 +34,6 @@ services:
       - "8080:8080"
     volumes:
     - vproappdata:/usr/local/tomcat/webapps
-    environment:
-      - MYSQL_ROOT_PASSWORD=vprodbpass
   
   vproweb:
     build:
